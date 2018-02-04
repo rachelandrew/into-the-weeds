@@ -12343,10 +12343,14 @@
 
     </div>
 </body>
-<script src="jquery-1.11.0.min.js"></script>
-<script src="equalize.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="jquery.matchHeight.js"></script>
 <script>
 
-$('.row').equalize('outerHeight');
+
+
+$(function() {
+	$('.row > div').matchHeight();
+});
 </script>
 </html>
