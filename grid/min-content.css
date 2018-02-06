@@ -1,0 +1,26 @@
+.grid {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(12, min-content);
+    grid-auto-rows: 100px;
+    grid-gap: 20px;
+}
+
+.grid>div {
+    border: 5px solid rgb(108, 91, 123);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.four-cols {
+    grid-column: auto / span 4;
+}
+
+.three-cols {
+    grid-column: auto / span 3;
+}
+
+.six-cols {
+    grid-column: auto / span 6;
+}
